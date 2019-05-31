@@ -7,10 +7,6 @@
        xmlns:local="clr-namespace:UvicMyAccess.Views"
        Title="UvicMyAccess"
        x:Class="UvicMyAccess.AppShell">
-
-    <!-- 
-        Styles and Resources 
-    -->
     
 
     <!-- Optional Templates 

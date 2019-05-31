@@ -3,12 +3,12 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using UvicMyAccess.Services;
 using UvicMyAccess.Views;
+using System.Threading.Tasks;
 
 namespace UvicMyAccess
 {
     public partial class App : Application
     {
-
         public App()
         {
             InitializeComponent();
@@ -31,5 +31,6 @@ namespace UvicMyAccess
         {
             // Handle when your app resumes
         }
+
     }
 }
