@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="UvicMyAccess.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <OnPlatform x:TypeArguments="x:String" x:Key="Bodoni">
+                <On Platform="Android" Value="BodoniMTCondensed.ttf#Bodoni" />
+                <On Platform="iOS" Value="BodoniMTCondensed"/>
+            </OnPlatform>
+
+            <Style TargetType="Label" x:Key="BoldAndItalic">
+                <Setter Property="FontAttributes" Value="Bold, Italic"/>
+            </Style>
+
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="White"></Setter>
+                <Setter Property="BarTextColor" Value="Black"></Setter>
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

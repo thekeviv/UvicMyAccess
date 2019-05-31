@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="UvicMyAccess.Views.LoginPage"
+             Visual="Material"
+             BackgroundColor="White"
+             xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             >
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="uviclogo.png" Scale="0.4" VerticalOptions="Start"/>
+            <Label Text="Uvic MyAccess" HorizontalTextAlignment="Center" Style="{StaticResource Key=BoldAndItalic}" FontFamily="{StaticResource Key=Bodoni}" FontSize="60" TextColor="Black" />
+            <StackLayout Margin="40,50,40,0">
+                <Entry x:Name="Email" Placeholder="Email/Username" />
+                <Entry x:Name="Password" Placeholder="Password" IsPassword="True"/>
+            </StackLayout>
+            <Button x:Name="LoginButton" Text="Login" Margin="40,20,40,0" CornerRadius="20" BackgroundColor="Brown" Clicked="LoginButtonPressed_Clicked"/>
+            <forms:AnimationView 
+                x:Name="AnimationView" 
+                Animation="loginanimation.json" 
+                AutoPlay="True" Loop="true"
+                VerticalOptions="FillAndExpand"
+                HorizontalOptions="FillAndExpand"
+                ScaleX="1.3"
+                />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
