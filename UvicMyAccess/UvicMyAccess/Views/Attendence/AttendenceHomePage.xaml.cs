@@ -15,6 +15,11 @@ namespace UvicMyAccess.Views
         private AttendenceViewModel viewModel;
         private string greetingMessage = "";
         private string[] greetingMessages = { "Hello", "Bonjour", "Hola", "Welcome", "Greetings" };
+
+        public AttendenceHomePage()
+        {
+            InitializeComponent();
+        }
         public AttendenceHomePage(AttendenceViewModel _viewModel)
         {
             InitializeComponent();
